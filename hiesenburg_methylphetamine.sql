@@ -37,7 +37,7 @@ VALUES
 (4, 'nirma', 715),
 (5, 'alakh', 400);
 
-alter table mf rename column grade to class;
+alter table mf change grade to class;
 alter table mf modify column gender varchar(100);
 DELETE FROM mf WHERE rollno = 05;
 update mf set marks=750 where rollno=03;
